@@ -1,0 +1,211 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPEcDg1fyTXiOShdu4dHAgb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Fauzi4232401023/Pemograman-Dasar/blob/main/Pemerograman%20dasar%20Tugas%20teori%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hewan = [\"Kucing\" , \"Jerapah\" , \"Ikan\"]\n",
+        "print(hewan[2])\n",
+        "hewan[1]\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "id": "jrB1rwcm4dRu",
+        "outputId": "bbe6bd42-0b28-4584-bcaf-4b3c29638278"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ikan\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Jerapah'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Hewan = {\"nama\": \"Kucing\", \"umur\": \"2\", \"warna\": \"hitam\", \"ras\": \"anggora\"}\n",
+        "print(Hewan[\"ras\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "agB4Kg436mEJ",
+        "outputId": "66ad0788-11a4-4fba-95bc-9a5a47f9c4c7"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "anggora\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "hobi = [\"Membaca\", \"Main Game\", \"Olahraga\"]\n",
+        "identitas = (4232401023, 3)\n",
+        "mata_kuliah = {\"Pemrograman Dasar\", \"Matematika\", \"Bahasa Inggris\"}\n",
+        "biodata = {\"nama\": \"Fauzi\",\"umur\": 19,\"jurusan\": \"RPE\",\"daerah\": \"Batam\",\"status_lulus\": False,\"identitas\": identitas,\"hobi\": hobi,\"mata_kuliah\": mata_kuliah}\n",
+        "\n",
+        "\n",
+        "print(\"BIODATA MAHASISWA\")\n",
+        "print(f\"Nama            : {biodata['nama']}\")\n",
+        "print(f\"Umur            : {biodata['umur']} tahun\")\n",
+        "print(f\"Jurusan         : {biodata['jurusan']}\")\n",
+        "print(f\"Daerah          : {biodata['daerah']}\")\n",
+        "print(f\"NIM             : {biodata['identitas'][0]}\")\n",
+        "print(f\"Semester        : {biodata['identitas'][1]}\")\n",
+        "print(f\"Hobi            : {', '.join(biodata['hobi'])}\")\n",
+        "print(f\"Mata Kuliah     : {', '.join(biodata['mata_kuliah'])}\")\n",
+        "print(f\"Status Lulus    : {biodata['status_lulus']}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9nzY9Yd28mPn",
+        "outputId": "b081074e-09a2-4ceb-dc14-e10151923b25"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "BIODATA MAHASISWA\n",
+            "Nama            : Fauzi\n",
+            "Umur            : 19 tahun\n",
+            "Jurusan         : RPE\n",
+            "Daerah          : Batam\n",
+            "NIM             : 4232401023\n",
+            "Semester        : 3\n",
+            "Hobi            : Membaca, Main Game, Olahraga\n",
+            "Mata Kuliah     : Pemrograman Dasar, Matematika, Bahasa Inggris\n",
+            "Status Lulus    : False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "biodata = {\"nama\": \"Fauzi\",\"umur\": 19,\"jurusan\": \"RPE\",\"semester\": 3,\"mata_kuliah\": \"Pemrograman Dasar\",\"status_lulus\": False,\"daerah\": \"Batam\",\"nim\": 4232401023}\n",
+        "\n",
+        "print(\"Nama           :\", biodata[\"nama\"])\n",
+        "print(\"Umur           :\", biodata[\"umur\"])\n",
+        "print(\"Jurusan        :\", biodata[\"jurusan\"])\n",
+        "print(\"Semester       :\", biodata[\"semester\"])\n",
+        "print(\"Mata Kuliah    :\", biodata[\"mata_kuliah\"])\n",
+        "print(\"Status Lulus   :\", biodata[\"status_lulus\"])\n",
+        "print(\"Daerah         :\", biodata[\"daerah\"])\n",
+        "print(\"NIM            :\", biodata[\"nim\"])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pDez8q9N-pVM",
+        "outputId": "818398f0-aeca-43f8-98a4-3d759a3bb1a1"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama           : Fauzi\n",
+            "Umur           : 19\n",
+            "Jurusan        : RPE\n",
+            "Semester       : 3\n",
+            "Mata Kuliah    : Pemrograman Dasar\n",
+            "Status Lulus   : False\n",
+            "Daerah         : Batam\n",
+            "NIM            : 4232401023\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "nama: str = \"Fauzi\"\n",
+        "umur: int = 19\n",
+        "jurusan: str = \"RPE\"\n",
+        "semester: int = 3\n",
+        "mata_kuliah: str = \"Pemrograman Dasar\"\n",
+        "status_lulus: bool = False\n",
+        "\n",
+        "print(nama, umur, jurusan, semester, mata_kuliah, status_lulus)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "My6Ys0WcCHEl",
+        "outputId": "857465a6-838e-49ae-dfc6-03055f484dcb"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Fauzi 19 RPE 3 Pemrograman Dasar False\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
